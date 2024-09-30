@@ -1,0 +1,12 @@
+.enlace{
+    display: flex;
+}
+.html{
+    float: left;
+}
+.css{
+    float: right;
+}
+.chrome{
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+table{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+th, td{
+   border: 2px solid;
+   border-radius: 5PX; 
+}
+.horas{
+    background-color: rgb(189, 250, 230);
+}
+.DIINW{
+    background-color: rgb(138, 239, 138);
+}
+.EIE{
+background-color: greenyellow;
+}
+.DEAPW{
+background-color: rgb(145, 248, 182);
+}
+.DWENC{
+    background-color: rgb(170, 216, 179);
+}
+.DWESV{
+    background-color: rgb(127, 194, 190);
+}
+.RECREO{
+    background-color: rgb(185, 136, 231);
+}
+.HORAS{
+    background-color: aqua;
+}
+.DIA{
+    background-color: rgb(124, 182, 124);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda Avanzada</title>
+</head>
+<body>
+    <h1>Busqueda Avanzada</h1>
+    <form method="get" action="procesar_busqueda.php">
+        <label for="palabra_clave">Palabra clave a buscar:</label>
+        <input type="text" id="palabra_clave" name="palabra_clave" required><br><br>
+
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria">
+            <option value="todas">Todas</option>
+            <option value="electronica">Electronica</option>
+            <option value="ropa">Ropa</option>
+            <option value="hogar">Hogar</option>
+        </select><br><br>
+
+        <label for="precio_min">Precio minimo:</label>
+        <input type="number" id="precio_min" name="precio_min"><br><br>
+
+        <label for="precio_max">Precio maximo:</label>
+        <input type="number" id="precio_max" name="precio_max"><br><br>
+
+        <label for="orden">Ordenar por:</label>
+        <select id="orden" name="orden">
+            <option value="relevancia">Relevancia</option>
+            <option value="precio">Precio</option>
+        </select><br><br>
+
+        <button type="submit">Buscar</button>
+    </form>
+</body>
+</html>

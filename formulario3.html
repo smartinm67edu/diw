@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Articulo</title>
+</head>
+<body>
+    <form  method="post">
+        <label for="articulo">Artículo</label>
+        <input type="text" id="articulo" name="articulo" placeholder="Articulo"><br><br>
+
+        <label>Forma de entrega:</label><br><br>
+       
+        <label for="envio">Envío a domicilio</label>
+        <input type="radio" id="envio" name="entrega" value="envio">
+        <br>
+        <label for="recogida">Recogida en tienda</label>
+        <input type="radio" id="recogida" name="entrega" value="recogida" checked>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

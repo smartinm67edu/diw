@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Precio con IVA</title>
+    <script>
+        function calcularIVA(event) {
+            event.preventDefault();
+
+            const precio = parseFloat(document.getElementById("precio").value);
+            const iva = parseFloat(document.getElementById("iva").value);
+            
+            if (!isNaN(precio)) {
+                const resultado = precio + (precio * iva / 100);
+                document.getElementById("resultado").value = resultado.toFixed(2);
+            } else {
+                alert("Por favor, introduce un precio valido.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculador de Precio con IVA</h1>
+    <form onsubmit="calcularIVA(event)">
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" step="0.01" required><br><br>
+
+        <label for="iva">IVA:</label>
+        <select id="iva" name="iva">
+            <option value="10">Reducido (10%)</option>
+            <option value="21">Normal (21%)</option>
+        </select><br><br>
+
+        <label for="resultado">Resultado:</label>
+        <input type="text" id="resultado" name="resultado" readonly><br><br>
+
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>

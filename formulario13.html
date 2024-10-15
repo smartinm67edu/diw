@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reserva de Pistas</title>
+    <style>
+        form {
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Reserva de Pistas</h1>
+    <form method="post" action="reserva.php">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" pattern="[A-Z][a-z]+" title="Debe empezar con mayuscula seguida de minusculas, sin caracteres especiales" required><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" pattern="[A-Z][a-z]+" title="Debe empezar con mayuscula seguida de minusculas, sin caracteres especiales" required><br>
+
+            <label>¿Es miembro del club?</label>
+            <input type="radio" id="miembro_si" name="miembro" value="si" checked>
+            <label for="miembro_si">Si</label>
+            <input type="radio" id="miembro_no" name="miembro" value="no">
+            <label for="miembro_no">No</label><br>
+
+            <label for="email">Correo electronico:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Datos de la Reserva</legend>
+
+            <label for="deporte">Nombre del deporte:</label>
+            <select id="deporte" name="deporte" required>
+                <option value="paddle">Paddle</option>
+                <option value="squash">Squash</option>
+                <option value="tenis">Tenis</option>
+            </select><br>
+
+            <label for="fecha">Fecha de la reserva:</label>
+            <input type="date" id="fecha" name="fecha" required><br>
+
+            <label for="hora">Hora de la reserva:</label>
+            <input type="time" id="hora" name="hora" required><br>
+
+            <input type="checkbox" id="normas" name="normas" required>
+            <label for="normas">Acepto las normas del club</label>
+        </fieldset><br>
+
+        <button type="submit">Reservar</button>
+    </form>
+</body>
+</html>

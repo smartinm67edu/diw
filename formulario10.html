@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Programador</title>
+</head>
+<body>
+    <form method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="nombre" required><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="mail" required><br><br>
+
+        <label for="telefono">Telefono (opcional)</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Su telefono"><br><br>
+
+        <fieldset>
+            <legend>Lenguajes que conoce</legend>
+            <table>
+                <tr>
+                    <td><label for="javascript">Javascript</label></td>
+                    <td><input type="checkbox" id="javascript" name="lenguajes" value="javascript"></td>
+                </tr>
+                <tr>
+                    <td><label for="php">PHP</label></td>
+                    <td><input type="checkbox" id="php" name="lenguajes" value="php"></td>
+                </tr>
+                <tr>
+                    <td><label for="nodejs">NodeJS</label></td>
+                    <td><input type="checkbox" id="nodejs" name="lenguajes" value="nodejs"></td>
+                </tr>
+                <tr>
+                    <td><label for="python">Python</label></td>
+                    <td><input type="checkbox" id="python" name="lenguajes" value="python"></td>
+                </tr>
+            </table>
+        </fieldset><br>
+
+        <label>Nivel de Ingles</label><br>
+        <label for="bajo">Bajo</label>
+        <input type="radio" id="bajo" name="nivel_ingles" value="bajo" required><br>
+
+        <label for="medio">Medio</label>
+        <input type="radio" id="medio" name="nivel_ingles" value="medio"><br>
+
+        <label for="alto">Alto</label>
+        <input type="radio" id="alto" name="nivel_ingles" value="alto"><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

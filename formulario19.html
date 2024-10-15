@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout y Pago con Tarjeta</title>
+</head>
+<body>
+    <h1>Checkout y Pago con Tarjeta</h1>
+    <form method="post" action="procesar.php">
+        <label for="numero_tarjeta">Numero de tarjeta:</label>
+        <input type="text" id="numero_tarjeta" name="numero_tarjeta" pattern="\d{16}" maxlength="16" placeholder="16 digitos sin espacios" required><br><br>
+
+        <label for="nombre_titular">Nombre del titular:</label>
+        <input type="text" id="nombre_titular" name="nombre_titular" required><br><br>
+
+        <label for="mes_caducidad">Mes de caducidad:</label>
+        <select id="mes_caducidad" name="mes_caducidad" required>
+            <option value="" disabled selected>Selecciona mes</option>
+            ${Array.from({ length: 12 }, (_, i) => `<option value="${i + 1}">${i + 1}</option>`).join("")}
+        </select><br><br>
+
+        <label for="anio_caducidad">Año de caducidad:</label>
+        <select id="anio_caducidad" name="anio_caducidad" required>
+            <option value="" disabled selected>Selecciona año</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+        </select><br><br>
+
+        <label for="cvv">Codigo de seguridad (CVV):</label>
+        <input type="password" id="cvv" name="cvv" pattern="\d{3}" maxlength="3" placeholder="3 digitos" required><br><br>
+
+        <label for="notas">Notas:</label><br>
+        <textarea id="notas" name="notas" cols="60" rows="2" placeholder="Opcional"></textarea><br><br>
+
+        <input type="checkbox" id="guardar_datos" name="guardar_datos">
+        <label for="guardar_datos">Guardar datos para otras compras</label><br><br>
+
+        <button type="submit">Pagar</button>
+        <button type="button" onclick="window.location.href='cancelar.php'">Cancelar</button>
+    </form>
+</body>
+</html>

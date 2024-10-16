@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Acceso a Ciclos Formativos de Grado Superior</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .datos-personales {
+            background-color: #8e7cc3;
+        }
+        .forma-acceso {
+            background-color: #6fa8dc;
+        }
+        .acceso_uni{
+            margin: 30px;
+        }
+        .documentos-adjuntos {
+            background-color: #93c47d;
+        }
+        .submit-button {
+            margin-top: 20px;
+        }
+        legend{
+            border:solid black 2px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>INFORMACION DE ACCESO A</h1>
+    <h2>LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+
+    <form method="post" action="procesar_solicitud.php">
+        <!-- Datos Personales -->
+        <fieldset class="datos-personales">
+            <legend>Datos Personales</legend>
+            <p>
+                <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+            </p>
+
+            <p>
+                <label for="lugar_nacimiento">Lugar de Nacimiento:</label>
+            <input type="text" id="lugar_nacimiento" name="lugar_nacimiento" required>
+
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia">
+                <option value="caceres">Caceres</option>
+                <!-- Agregar otras provincias según sea necesario -->
+            </select>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </p>
+
+            <p>
+                <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="codigo_postal">Codigo Postal:</label>
+            <input type="text" id="codigo_postal" name="codigo_postal" required>
+            </p>
+        </fieldset>
+
+        <fieldset class="forma-acceso">
+            <legend>Forma de Acceso</legend>
+            <p>
+                <label><input type="radio" name="forma_acceso" value="directo"> Directo</label>
+            </p>
+            <p class="acceso_uni">
+                <label><input type="radio" name="forma_acceso" value="bachillerato"> Bachillerato</label>
+                <input type="text" name="bachillerato_especificar" placeholder="Especifique" style="width: auto;">
+            </p>
+            <p class="acceso_uni">
+                <label><input type="radio" name="forma_acceso" value="universidad"> Universidad</label>
+            </p>
+            <p class="acceso_uni">
+                <label><input type="radio" name="forma_acceso" value="grado_medio"> Grado Medio</label>
+                <input type="text" name="grado_medio_especificar" placeholder="Especifique" style="width: auto;">
+            </p>
+            <p class="acceso_uni">
+                <label><input type="radio" name="forma_acceso" value="otros"> Otros (especifique)</label>
+                <input type="text" name="otros_especificar" placeholder="Especifique" style="width: auto;">
+            </p>
+            <p>
+                <label><input type="radio" name="forma_acceso" value="prueba_libre"> Prueba Libre</label>
+            </p>
+        </fieldset>
+        
+        
+
+        <!-- Documentos Adjuntos -->
+        <fieldset class="documentos-adjuntos">
+            <legend>Documentos Adjuntos</legend>
+            <label><input type="checkbox" name="documentos" value="fotocopia_dni"> Fotocopia DNI</label>
+            <label><input type="checkbox" name="documentos" value="certificado_academico"> Certificado Academico</label><br>
+            <label><input type="checkbox" name="documentos" value="otros_documentos"> Otros documentos (especifique)</label>
+            <input type="text" name="otros_documentos_especificar"><br>
+        </fieldset>
+
+        <!-- Botón de Envío -->
+        <div class="submit-button">
+            <button type="submit">Enviar Solicitud</button>
+        </div>
+    </form>
+</body>
+</html>

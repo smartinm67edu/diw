@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Listas en CSS</title>
+    <style>
+        /* list-style-type */
+        .list-disc { list-style-type: disc; }
+        .list-circle { list-style-type: circle; }
+        .list-square { list-style-type: square; }
+        .list-decimal { list-style-type: decimal; }
+        .list-decimal-leadingzero { list-style-type: decimal-leading-zero; }
+        .list-lower-roman { list-style-type: lower-roman; }
+        .list-upper-roman { list-style-type: upper-roman; }
+        .list-lower-greek { list-style-type: lower-greek; }
+        .list-lower-latin { list-style-type: lower-latin; }
+        .list-upper-latin { list-style-type: upper-latin; }
+        .list-armenian { list-style-type: armenian; }
+        .list-georgian { list-style-type: georgian; }
+        .list-lower-alpha { list-style-type: lower-alpha; }
+        .list-upper-alpha { list-style-type: upper-alpha; }
+        .list-none { list-style-type: none; }
+
+        /* list-style-image */
+        .list-image { list-style-image: url('https://bit.ly/3Ej6NyS'); }
+        .list-image-none { list-style-image: none; }
+
+        /* list-style-position */
+        .list-inside { list-style-position: inside; }
+        .list-outside { list-style-position: outside; }
+
+        /* list-style (combinación) */
+        .list-custom {
+            list-style: square inside url('https://bit.ly/3Ej6NyS');
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejemplos de Listas en CSS</h1>
+
+    <!-- Ejemplos de list-style-type -->
+    <h2>list-style-type</h2>
+    <ul class="list-disc">
+        <li>Estilo de marcador: disc</li>
+    </ul>
+    <ul class="list-circle">
+        <li>Estilo de marcador: circle</li>
+    </ul>
+    <ul class="list-square">
+        <li>Estilo de marcador: square</li>
+    </ul>
+    <ul class="list-decimal">
+        <li>Estilo de marcador: decimal</li>
+    </ul>
+    <ul class="list-decimal-leadingzero">
+        <li>Estilo de marcador: decimal-leading-zero</li>
+    </ul>
+    <ul class="list-lower-roman">
+        <li>Estilo de marcador: lower-roman</li>
+    </ul>
+    <ul class="list-upper-roman">
+        <li>Estilo de marcador: upper-roman</li>
+    </ul>
+    <ul class="list-lower-greek">
+        <li>Estilo de marcador: lower-greek</li>
+    </ul>
+    <ul class="list-lower-latin">
+        <li>Estilo de marcador: lower-latin</li>
+    </ul>
+    <ul class="list-upper-latin">
+        <li>Estilo de marcador: upper-latin</li>
+    </ul>
+    <ul class="list-armenian">
+        <li>Estilo de marcador: armenian</li>
+    </ul>
+    <ul class="list-georgian">
+        <li>Estilo de marcador: georgian</li>
+    </ul>
+    <ul class="list-lower-alpha">
+        <li>Estilo de marcador: lower-alpha</li>
+    </ul>
+    <ul class="list-upper-alpha">
+        <li>Estilo de marcador: upper-alpha</li>
+    </ul>
+    <ul class="list-none">
+        <li>Sin marcador (none)</li>
+    </ul>
+
+    <!-- Ejemplos de list-style-image -->
+    <h2>list-style-image</h2>
+    <ul class="list-image">
+        <li>Marcador con imagen</li>
+    </ul>
+    <ul class="list-image-none">
+        <li>Sin imagen en el marcador (none)</li>
+    </ul>
+
+    <!-- Ejemplos de list-style-position -->
+    <h2>list-style-position</h2>
+    <ul class="list-inside">
+        <li>Posición del marcador: inside</li>
+        <li>El marcador está dentro del cuadro de texto</li>
+    </ul>
+    <ul class="list-outside">
+        <li>Posición del marcador: outside</li>
+        <li>El marcador está fuera del cuadro de texto</li>
+    </ul>
+
+    <!-- Ejemplo de list-style (combinación de propiedades) -->
+    <h2>list-style (combinación de propiedades)</h2>
+    <ul class="list-custom">
+        <li>Marcador con imagen, estilo cuadrado y posición inside</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Clase sebastian Martin</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            text-align: left;
+            padding: 6px;
+        }
+
+        th {
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        td {
+            font-size: 1em;
+        }
+
+        td.horas {
+            background-color: #228B22;
+            font-weight: bold;
+        }
+
+    
+        td.recreo {
+            background-color: yellow;
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+        form {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        input[type="email"] {
+            padding: 8px;
+            width: 300px;
+            border: 1px solid red;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: 1px solid black;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .error {
+            color: red;
+        }
+
+        th::first-letter {
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+
+        td:nth-child(6):hover {
+            font-size: 2em;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:link {
+            color: green;
+            text-align: center;
+        }
+
+        td {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<a href="https://iesagora.educarex.es/"><h2>HORARIO DE CLASE CURSO 2018-2019</h2></a>
+
+<table>
+    <tr>
+        <th>Horas</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+    </tr>
+    <tr>
+        <td class="horas">8:00</td>
+        <td rowspan="2">Matemáticas</td> 
+        <td>Lengua</td>
+        <td>Inglés</td>
+        <td colspan="2">Ciencias</td> 
+    </tr>
+    <tr>
+        <td class="horas">9:00</td>
+        <td>Historia</td>
+        <td>Ciencias</td>
+        <td>Matemáticas</td>
+        <td>Lengua</td>
+    </tr>
+    <tr>
+        <td class="horas">10:00</td>
+        <td colspan="5" class="recreo">RECREO</td>
+    </tr>
+    <tr>
+        <td class="horas">10:30</td>
+        <td>Inglés</td>
+        <td rowspan="2">Ciencias</td>
+        <td>Matemáticas</td>
+        <td>Lengua</td>
+        <td>Historia</td>
+    </tr>
+    <tr>
+        <td class="horas">11:30</td>
+        <td>Historia</td>
+        <td>Ciencias</td>
+        <td>Matemáticas</td>
+        <td rowspan="2">Inglés</td> 
+    </tr>
+</table>
+
+
+<form action="#" method="post">
+    <label for="email">Email<span class="error">*</span></label>
+    <input type="email" id="email" name="email" placeholder="Inserte email del destinatario" required><br><br>
+    <input type="submit" value="Enviar Horario">
+</form>
+
+
+
+</body>
+</html>

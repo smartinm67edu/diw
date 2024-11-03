@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demostración de HTML y CSS</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* CSS básico para el documento */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav {
+      margin: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Uso de flexbox */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .box {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      margin: 10px;
+      padding: 20px;
+      width: calc(33.333% - 20px);
+    }
+
+    @media (max-width: 768px) {
+      .box {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Demostración Completa de HTML y CSS</h1>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Acerca de</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <section class="container">
+    <div class="box">
+      <h2>Encabezado H2</h2>
+      <p>Este es un párrafo de ejemplo que describe cómo se comporta HTML básico con CSS aplicado. Se utiliza <strong>strong</strong> y <em>emphasis</em> para dar énfasis al texto.</p>
+    </div>
+    <div class="box">
+      <h2>Lista de Elementos</h2>
+      <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ul>
+    </div>
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

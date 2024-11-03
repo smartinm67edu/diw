@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-clases y Pseudo-elementos en CSS</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    /* Pseudo-clases para selección de hijos o hermanos */
+    .container div:first-child {
+      background-color: lightblue; /* Primer hijo */
+    }
+    .container div:last-child {
+      background-color: lightgreen; /* Último hijo */
+    }
+    .container div:first-of-type {
+      border: 2px solid blue; /* Primer hermano de su tipo */
+    }
+    .container div:last-of-type {
+      border: 2px solid green; /* Último hermano de su tipo */
+    }
+    .container div:only-child {
+      background-color: lightcoral; /* Hijo único */
+    }
+    .container div:only-of-type {
+      color: red; /* Único hermano de su tipo */
+    }
+    .container div:empty {
+      background-color: yellow; /* Elemento sin hijos */
+    }
+    .container div:nth-child(2) {
+      font-weight: bold; /* Segundo hijo */
+    }
+    .container div:nth-last-child(2) {
+      font-style: italic; /* Penúltimo hijo */
+    }
+    .container div:nth-of-type(3) {
+      text-transform: uppercase; /* Tercer hermano de su tipo */
+    }
+    .container div:nth-last-of-type(1) {
+      text-decoration: underline; /* Último hermano de su tipo */
+    }
+
+    /* Pseudo-clases de interacción */
+    a:visited {
+      color: purple; /* Enlace visitado */
+    }
+    a:hover {
+      color: orange; /* Estilo cuando el apuntador pasa por encima */
+    }
+    a:active {
+      color: red; /* Enlace cuando se pulsa */
+    }
+    input:focus {
+      border: 2px solid blue; /* Estilo cuando el elemento tiene el foco */
+    }
+
+    /* Pseudo-elementos */
+    p::first-line {
+      font-weight: bold; /* Primera línea de texto de un elemento */
+    }
+    p::first-letter {
+      font-size: 2em; /* Primera letra de la primera línea de texto */
+    }
+    p::before {
+      content: "Nota: "; /* Contenido añadido al principio del documento */
+      color: red;
+    }
+    p::after {
+      content: " (fin del párrafo)"; /* Contenido añadido al final del documento */
+      color: gray;
+    }
+    ::selection {
+      background-color: lightgray; /* Estilo del texto seleccionado por el usuario */
+    }
+  </style>
+</head>
+<body>
+  <h1>Pseudo-clases y Pseudo-elementos en CSS</h1>
+
+  <div class="container">
+    <div>Primer hijo</div>
+    <div>Segundo hijo</div>
+    <div>Tercer hijo</div>
+    <div>Cuarto hijo</div>
+    <div></div> <!-- Elemento vacío -->
+  </div>
+
+  <h2>Interacción con Enlaces y Elementos de Formulario</h2>
+  <a href="#">Este es un enlace de ejemplo</a>
+  <br><br>
+  <input type="text" placeholder="Foco para cambiar el estilo">
+
+  <h2>Ejemplos de Pseudo-elementos</h2>
+  <p>Este es un párrafo de ejemplo que muestra el uso de pseudo-elementos.</p>
+</body>
+</html>

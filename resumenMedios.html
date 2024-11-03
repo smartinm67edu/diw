@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumen de Medios en CSS</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilo general */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lightgrey;
+    }
+
+    /* Estilo específico para dispositivos de impresión */
+    @media print {
+      body {
+        background-color: white;
+        color: black;
+        font-size: 12pt;
+      }
+    }
+
+    /* Estilo específico para pantallas */
+    @media screen {
+      body {
+        background-color: lightblue;
+      }
+    }
+
+    /* Estilo para dispositivos móviles */
+    @media handheld {
+      body {
+        font-size: 10pt;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Resumen de Medios en CSS</h1>
+  <p>En CSS, los <em>media types</em> permiten adaptar el diseño y el estilo de una página web para diferentes dispositivos y situaciones. Los siguientes son los tipos de medios más comunes y cómo se describen:</p>
+
+  <ul>
+    <li><strong>all</strong>: Aplica a todos los dispositivos sin importar sus características específicas.</li>
+    <li><strong>braille</strong>: Diseñado para dispositivos táctiles que emplean el sistema braille.</li>
+    <li><strong>embossed</strong>: Se refiere a impresoras braille, que generan contenido en papel en formato braille.</li>
+    <li><strong>handheld</strong>: Está dirigido a dispositivos de mano, como teléfonos móviles o PDAs.</li>
+    <li><strong>print</strong>: Utilizado para impresoras y para la función de "Vista Previa para Imprimir" de los navegadores.</li>
+    <li><strong>projection</strong>: Se emplea para proyectores y dispositivos utilizados en presentaciones.</li>
+    <li><strong>screen</strong>: Aplicable a pantallas de ordenadores, como monitores o pantallas de laptops.</li>
+    <li><strong>speech</strong>: Usado para navegadores de voz y sintetizadores.</li>
+    <li><strong>tty</strong>: Para dispositivos textuales limitados, como teletipos o terminales de texto.</li>
+    <li><strong>tv</strong>: Diseñado para televisores u otros dispositivos que tienen resoluciones bajas.</li>
+  </ul>
+</body>
+</html>

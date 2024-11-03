@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumen de Propiedades CSS</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    /* Propiedades de color y fondo */
+    .color-text {
+      color: #3498db; /* Color del texto usando HEX */
+    }
+    .background-color {
+      background-color: rgba(255, 99, 71, 0.8); /* Color de fondo usando RGBA */
+    }
+    .background-image {
+      background-image: url('https://via.placeholder.com/150'); /* Imagen de fondo */
+      background-repeat: no-repeat; /* No repetir la imagen */
+      background-attachment: fixed; /* La imagen no se desplaza */
+      background-position: center; /* Posición de la imagen */
+      background-size: cover; /* Tamaño de la imagen de fondo */
+    }
+    .opacity {
+      opacity: 0.7; /* Transparencia */
+    }
+
+    /* Propiedades de texto */
+    .text-indent {
+      text-indent: 30px; /* Sangría de la primera línea */
+    }
+    .text-align {
+      text-align: justify; /* Alineación del texto */
+    }
+    .text-decoration {
+      text-decoration: underline; /* Subrayado */
+    }
+    .letter-spacing {
+      letter-spacing: 2px; /* Espaciado entre letras */
+    }
+    .word-spacing {
+      word-spacing: 10px; /* Espaciado entre palabras */
+    }
+    .text-transform {
+      text-transform: uppercase; /* Texto en mayúsculas */
+    }
+    .line-height {
+      line-height: 1.8; /* Espacio entre líneas */
+    }
+    .vertical-align {
+      vertical-align: middle; /* Alineación vertical */
+    }
+
+    /* Propiedades de fuentes */
+    .font-family {
+      font-family: "Times New Roman", Times, serif; /* Familia de fuente */
+    }
+    .font-style {
+      font-style: italic; /* Estilo de la fuente */
+    }
+    .font-variant {
+      font-variant: small-caps; /* Variante de la fuente */
+    }
+    .font-weight {
+      font-weight: bold; /* Peso de la fuente */
+    }
+    .font-size {
+      font-size: 1.5em; /* Tamaño de la fuente */
+    }
+  </style>
+</head>
+<body>
+  <h1>Resumen de Propiedades CSS</h1>
+  
+  <h2>Propiedades de Color y Fondo</h2>
+  <p class="color-text">Este texto tiene un color definido usando HEX.</p>
+  <p class="background-color">Este párrafo tiene un color de fondo usando RGBA.</p>
+  <div class="background-image" style="width: 300px; height: 150px;">
+    <p>Este div tiene una imagen de fondo que no se repite.</p>
+  </div>
+  <p class="opacity">Este párrafo tiene una transparencia del 70%.</p>
+
+  <h2>Propiedades de Texto</h2>
+  <p class="text-indent">Este párrafo tiene una sangría de 30px en la primera línea.</p>
+  <p class="text-align">Este párrafo está alineado de forma justificada para ocupar todo el ancho disponible.</p>
+  <p class="text-decoration">Este texto tiene un subrayado aplicado.</p>
+  <p class="letter-spacing">Este párrafo tiene un espaciado entre letras de 2px.</p>
+  <p class="word-spacing">Este párrafo tiene un espaciado entre palabras de 10px.</p>
+  <p class="text-transform">Este texto está en mayúsculas.</p>
+  <p class="line-height">Este párrafo tiene un espacio entre líneas de 1.8.</p>
+  <p><span class="vertical-align">Texto alineado verticalmente en el medio.</span></p>
+
+  <h2>Propiedades de Fuentes</h2>
+  <p class="font-family">Este párrafo usa la fuente "Times New Roman".</p>
+  <p class="font-style">Este texto está en cursiva.</p>
+  <p class="font-variant">Este párrafo tiene las letras en "small-caps".</p>
+  <p class="font-weight">Este párrafo tiene el texto en negrita.</p>
+  <p class="font-size">Este párrafo tiene un tamaño de fuente de 1.5em.</p>
+</body>
+</html>

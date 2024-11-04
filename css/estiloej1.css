@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css??-family=Montserrat:wghtt');
+body{
+    font-family: 'Montserrat', Arial, sans-serif;
+        
+}
+header {
+    background-color: #333;
+    color: #333;
+    padding: 1rem;
+    align-items: center;
+  }
+  nav ul{
+    list-style-type: none;
+    text-align: center;
+  }
+  nav li{
+    display: inline;
+  }
+
+  nav a {
+    
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    
+  }
+
+  nav a:hover {
+    color:#a9065d ;
+  }
+
+  form{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+    width: 800px;
+    max-width: 80%;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    
+        
+  }
+  form p{
+    text-align: left;
+  }
+  input{
+    width: 100%;
+  }
+  #botonEnviar{
+    background-color: #a9065d;
+    padding: 10px;
+    margin: 15px;
+    width: 100%;
+    color: #fff;
+  }
+  #botonEnviar:hover{
+    background-color:#4CAF50;
+  }
+.nombre_apell{
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+  }
+/*sebastian Martin martin

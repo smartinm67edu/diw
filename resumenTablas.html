@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Tablas en HTML y CSS</title>
+    <style>
+        /* Estilos generales para el cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 20px;
+        }
+
+        /* Estilos para la tabla de horario */
+        .horario-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .horario-table th, .horario-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .horario-table th {
+            background-color: #0073e6;
+            color: white;
+        }
+        .horario-table .materia {
+            font-weight: bold;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .matematicas {
+            background-color: #ff6666;
+        }
+        .historia {
+            background-color: #ffcc66;
+        }
+        .ciencias {
+            background-color: #66b3ff;
+        }
+        .ingles {
+            background-color: #99ff99;
+        }
+
+        /* Estilos para la tabla de inventario */
+        .inventario-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .inventario-table th, .inventario-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .inventario-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .inventario-table td {
+            background-color: #f9f9f9;
+        }
+        .inventario-table .low-stock {
+            color: red;
+            font-weight: bold;
+        }
+        .inventario-table .high-stock {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tabla de Horario Semanal</h2>
+    <table class="horario-table">
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00 - 9:00</td>
+                <td class="materia matematicas">Matemáticas</td>
+                <td class="materia historia">Historia</td>
+                <td class="materia ciencias">Ciencias</td>
+                <td class="materia ingles">Inglés</td>
+                <td class="materia matematicas">Matemáticas</td>
+            </tr>
+            <tr>
+                <td>9:00 - 10:00</td>
+                <td class="materia ciencias">Ciencias</td>
+                <td class="materia matematicas">Matemáticas</td>
+                <td class="materia ingles">Inglés</td>
+                <td class="materia historia">Historia</td>
+                <td class="materia ciencias">Ciencias</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:00</td>
+                <td class="materia ingles">Inglés</td>
+                <td class="materia ciencias">Ciencias</td>
+                <td class="materia matematicas">Matemáticas</td>
+                <td class="materia ingles">Inglés</td>
+                <td class="materia historia">Historia</td>
+            </tr>
+            <tr>
+                <td>11:00 - 12:00</td>
+                <td colspan="5" style="background-color: #e6e6e6; font-weight: bold;">Recreo</td>
+            </tr>
+            <tr>
+                <td>12:00 - 1:00</td>
+                <td class="materia historia">Historia</td>
+                <td class="materia matematicas">Matemáticas</td>
+                <td class="materia ingles">Inglés</td>
+                <td class="materia ciencias">Ciencias</td>
+                <td class="materia ingles">Inglés</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Tabla de Inventario de Productos</h2>
+    <table class="inventario-table">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+                <th>Cantidad en Stock</th>
+                <th>Proveedor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Manzanas</td>
+                <td>Frutas</td>
+                <td>$1.50</td>
+                <td class="high-stock">120</td>
+                <td>AgroMarket</td>
+            </tr>
+            <tr>
+                <td>Leche</td>
+                <td>Lácteos</td>
+                <td>$0.80</td>
+                <td class="low-stock">5</td>
+                <td>Lechería Central</td>
+            </tr>
+            <tr>
+                <td>Pan</td>
+                <td>Panadería</td>
+                <td>$0.50</td>
+                <td class="high-stock">200</td>
+                <td>Panadería El Molino</td>
+            </tr>
+            <tr>
+                <td>Huevos</td>
+                <td>Aves</td>
+                <td>$0.20</td>
+                <td class="low-stock">8</td>
+                <td>Granja Los Pinos</td>
+            </tr>
+            <tr>
+                <td>Queso</td>
+                <td>Lácteos</td>
+                <td>$2.00</td>
+                <td class="high-stock">50</td>
+                <td>Lácteos del Norte</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

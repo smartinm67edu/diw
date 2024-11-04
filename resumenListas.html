@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Listas en HTML y CSS</title>
+    <style>
+        /* Estilo general para el cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 20px;
+        }
+
+        /* Estilos para la lista ordenada */
+        .ordered-list {
+            counter-reset: item;
+            padding-left: 0;
+            margin: 20px 0;
+        }
+        .ordered-list li {
+            list-style-type: none;
+            padding: 8px 0;
+            counter-increment: item;
+            position: relative;
+        }
+        .ordered-list li::before {
+            content: counter(item) ".";
+            font-weight: bold;
+            color: #0073e6;
+            position: absolute;
+            left: -30px;
+        }
+
+        /* Estilos para la lista sin ordenar */
+        .unordered-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .unordered-list li {
+            padding: 10px;
+            background-color: #e6f7ff;
+            border: 1px solid #0073e6;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            position: relative;
+        }
+        .unordered-list li::before {
+            content: '✔';
+            color: #0073e6;
+            position: absolute;
+            left: -20px;
+        }
+
+        /* Estilos para la lista de definición */
+        .definition-list {
+            margin: 20px 0;
+        }
+        .definition-list dt {
+            font-weight: bold;
+            color: #0073e6;
+            margin-top: 10px;
+        }
+        .definition-list dd {
+            margin: 0 0 10px 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Lista Ordenada (Ordered List)</h2>
+    <ol class="ordered-list">
+        <li>Paso uno: Preparación</li>
+        <li>Paso dos: Implementación</li>
+        <li>Paso tres: Revisión</li>
+        <li>Paso cuatro: Finalización</li>
+    </ol>
+
+    <h2>Lista Sin Ordenar (Unordered List)</h2>
+    <ul class="unordered-list">
+        <li>Manzana</li>
+        <li>Banana</li>
+        <li>Cereza</li>
+        <li>Durazno</li>
+    </ul>
+
+    <h2>Lista de Definición (Definition List)</h2>
+    <dl class="definition-list">
+        <dt>HTML</dt>
+        <dd>Lenguaje de marcado de hipertexto, utilizado para estructurar contenido en la web.</dd>
+        <dt>CSS</dt>
+        <dd>Hojas de estilo en cascada, utilizadas para diseñar y estilizar contenido web.</dd>
+        <dt>JavaScript</dt>
+        <dd>Lenguaje de programación que permite interactividad en las páginas web.</dd>
+    </dl>
+
+</body>
+</html>

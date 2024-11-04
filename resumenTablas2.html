@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Tablas en HTML y CSS</title>
+    <style>
+        /* Estilo general para el cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 20px;
+        }
+
+        /* Estilos para la tabla del horario */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .schedule-table th, .schedule-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        .schedule-table th {
+            background-color: #0073e6;
+            color: #fff;
+            font-weight: bold;
+        }
+        .schedule-table tr:nth-child(even) {
+            background-color: #f4f4f9;
+        }
+        .schedule-table .time {
+            background-color: #e6f7ff;
+            font-weight: bold;
+        }
+        .schedule-table .subject {
+            color: #555;
+        }
+        .schedule-table .highlight {
+            background-color: #ffedcc;
+        }
+        /* Estilos para la tabla de precios */
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .pricing-table th, .pricing-table td {
+            border: 1px solid #ddd;
+            padding: 16px;
+        }
+        .pricing-table th {
+            background-color: #0073e6;
+            color: #fff;
+            font-weight: bold;
+        }
+        .pricing-table .recommended {
+            background-color: #ffedcc;
+            font-weight: bold;
+        }
+        .pricing-table .highlighted {
+            background-color: #e6f7ff;
+            font-weight: bold;
+            color: #0073e6;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Horario de Clases</h2>
+    <table class="schedule-table">
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td class="time">8:00 - 9:00</td>
+            <td class="subject highlight">Matemáticas</td>
+            <td class="subject">Inglés</td>
+            <td class="subject">Historia</td>
+            <td class="subject">Ciencias</td>
+            <td class="subject">Educación Física</td>
+        </tr>
+        <tr>
+            <td class="time">9:00 - 10:00</td>
+            <td class="subject">Química</td>
+            <td class="subject highlight">Matemáticas</td>
+            <td class="subject">Geografía</td>
+            <td class="subject">Historia</td>
+            <td class="subject">Inglés</td>
+        </tr>
+        <tr>
+            <td class="time">10:00 - 11:00</td>
+            <td class="subject">Educación Física</td>
+            <td class="subject">Ciencias</td>
+            <td class="subject highlight">Matemáticas</td>
+            <td class="subject">Inglés</td>
+            <td class="subject">Química</td>
+        </tr>
+        <tr>
+            <td class="time">11:00 - 12:00</td>
+            <td class="subject">Historia</td>
+            <td class="subject">Geografía</td>
+            <td class="subject">Ciencias</td>
+            <td class="subject highlight">Matemáticas</td>
+            <td class="subject">Inglés</td>
+        </tr>
+    </table>
+    <h2>Planes de Precios</h2>
+    <table class="pricing-table">
+        <tr>
+            <th>Plan</th>
+            <th>Precio Mensual</th>
+            <th>Almacenamiento</th>
+            <th>Soporte</th>
+        </tr>
+        <tr>
+            <td>Básico</td>
+            <td>$5</td>
+            <td>10 GB</td>
+            <td>Email</td>
+        </tr>
+        <tr class="highlighted">
+            <td>Pro</td>
+            <td>$15</td>
+            <td>50 GB</td>
+            <td>Email y Chat</td>
+        </tr>
+        <tr class="recommended">
+            <td>Premium</td>
+            <td>$25</td>
+            <td>100 GB</td>
+            <td>Soporte 24/7</td>
+        </tr>
+    </table>
+
+</body>
+</html>

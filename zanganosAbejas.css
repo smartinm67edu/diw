@@ -84,6 +84,17 @@ header, footer {
 .search button:hover {
     background-color: #e5a836;
 }
+.contenido {
+    justify-content: space-around;
+    display: flex;
+    gap: 2%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+.contenido img{
+    width: 30%;
+}
 
 
 .caja-principal {
@@ -93,12 +104,7 @@ header, footer {
     margin-top: 20px;
 }
 
-.contenido {
-    flex: 2;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-}
+
 
 .barra-lateral {
     flex: 1;
@@ -109,4 +115,59 @@ header, footer {
 
 footer {
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.social-buttons {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.social-button {
+    gap: 2%;
+    justify-content: space-around;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Colores específicos de cada red social */
+.facebook {
+    background-color: #3b5998; /* Azul de Facebook */
+}
+
+.facebook:hover {
+    background-color: #334d84; /* Más oscuro al pasar el cursor */
+}
+
+.twitter {
+    background-color: #1da1f2; /* Azul de Twitter */
+}
+
+.twitter:hover {
+    background-color: #1a91da; /* Más oscuro al pasar el cursor */
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #e6683c, #dc2743, #cc2366, #bc1888, #9c129b);
+}
+
+.linkedin {
+    background-color: #0077b5; /* Azul de LinkedIn */
+}
+
+.linkedin:hover {
+    background-color: #006699; /* Más oscuro al pasar el cursor */
 }

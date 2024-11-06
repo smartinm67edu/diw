@@ -4,89 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Ejemplo - Maquetación por Cajas</title>
-    <style>
-        /* Estilos generales */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-        }
-        
-        #logo img {
-            width: 100%;
-        }
-        
-        #logo {
-            text-align: left;
-            width: 10%;
-            height: 10%;
-        }
-
-        /* Estructura de la maquetación por cajas */
-        .contenedor {
-            width: 90%;
-            margin: auto;
-            max-width: 1200px;
-        }
-
-        header, footer {
-            background-color: #f2c041;
-            color: white;
-            text-align: center;
-            align-items: center;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .headerText {
-            background-color: #219330;
-            display: flex;
-            align-items: center;
-            width: 50%; /* Ajusta el ancho de la barra */
-            padding: 2%;
-            border-radius: 40px;
-            justify-content: space-around;
-            gap: 20px; /* Espacio entre los elementos dentro de headerText */
-        }
-        .headerText button{
-            background-color: rgb(0, 255, 115);
-            padding: 3%;
-            border-radius: 40px;
-            border: none;
-            box-shadow: 2px 2px 2px 2px rgba(117, 26, 26, 0.3);
-
-        }
-
-        .caja-principal {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .contenido {
-            flex: 2;
-            background-color: #f4f4f4;
-            padding: 20px;
-            border-radius: 5px;
-        }
-
-        .barra-lateral {
-            flex: 1;
-            background-color: #e4e4e4;
-            padding: 20px;
-            border-radius: 5px;
-        }
-
-        footer {
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="zanganosAbejas.css">
 </head>
 <body>
 
@@ -99,7 +17,13 @@
                 <button>Blog</button>
                 <button>Inicio de sesión</button>
             </div>
-            <p>Ejemplo de Maquetación por Cajas</p>
+            <div class="search">
+                <form id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Buscar productos..." />
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            
         </header>
 
         <!-- Contenido principal y barra lateral -->

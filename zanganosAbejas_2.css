@@ -84,25 +84,6 @@ header {
 .search button:hover {
     background-color: #e5a836;
 }
-.contenido {
-    justify-content: space-around;
-    display: flex;
-    gap: 2%;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-}
-.contenido img{
-    width: 30%;
-}
-
-
-.caja-principal {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-}
 
 
 

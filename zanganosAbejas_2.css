@@ -143,12 +143,13 @@ header {
 
 .blog-post button {
     padding: 10px 15px;
-    background-color: #219330;
+    background-color: #e5a836; 
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    
 }
 
 .blog-post button:hover {
@@ -167,7 +168,11 @@ footer {
     align-items: center;
     gap: 20px;
     margin-top: 3vh;
+    width: 90%; 
+    position: fixed;
+    bottom: 0;
 }
+
 
 footer p {
     text-align: center;

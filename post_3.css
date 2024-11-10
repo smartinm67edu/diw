@@ -100,6 +100,104 @@ header {
 
 
 
+/* Estilo para los títulos principales */
+.post-content h1 {
+    font-size: 2.5rem;
+    color: #333333; /* Color oscuro para el texto */
+    margin-bottom: 1rem;
+    text-align: center; /* Centrado para títulos principales */
+}
+
+/* Estilo para los subtítulos */
+.post-content h2 {
+    font-size: 2rem;
+    color: #555555; /* Color intermedio */
+    margin-bottom: 1rem;
+}
+
+/* Fecha de publicación */
+.post-date {
+    font-size: 0.9rem;
+    color: #666666; /* Gris suave */
+    text-align: right;
+    margin-bottom: 1rem;
+    font-style: italic; /* Estilo cursivo */
+}
+
+/* Contenedor principal del post */
+.post-content {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 2rem;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 20px auto;
+    width: 90%; /* Ancho ajustado */
+    text-align: justify; /* Texto justificado */
+}
+
+/* Estilo para las imágenes dentro del contenido */
+.post-image {
+    width: 40%;
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 1rem auto; /* Margen superior/inferior de 1rem y centrado horizontal */
+    display: block; /* Convierte la imagen en un elemento de bloque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+
+/* Listas dentro del contenido */
+.post-content ul {
+    margin: 1rem 0;
+    padding-left: 20px; /* Sangría */
+    list-style-type: disc; /* Estilo de viñetas */
+}
+
+.post-content ul li {
+    margin-bottom: 0.5rem;
+    color: #555555; /* Color de texto */
+    font-size: 1rem; /* Tamaño del texto */
+}
+
+/* Botones dentro de los posts */
+.post-content button {
+    background-color: #219330; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Botón alineado */
+    text-align: center;
+}
+
+.post-content button:hover {
+    background-color: #1a7f26; /* Verde más oscuro */
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Estilo para los párrafos */
+.post-content p {
+    font-size: 1.1rem;
+    line-height: 1.8; /* Mayor separación entre líneas */
+    color: #444444; /* Gris oscuro */
+    margin-bottom: 1.5rem; /* Espaciado entre párrafos */
+}
+
+/* Estilo para las conclusiones */
+.post-content h3 {
+    font-size: 1.8rem;
+    color: #444444; /* Texto más oscuro */
+    margin-bottom: 1rem;
+}
+
+/* Margen adicional en el main */
+main {
+    margin-top: 2rem; /* Espacio adicional desde el encabezado */
+    margin-bottom: 6rem; /* Separación del pie de página */
+}
 
 
 
@@ -114,9 +212,7 @@ footer {
     align-items: center;
     gap: 20px;
     margin-top: 3vh;
-    width: 90%; 
-    position: fixed;
-    bottom: 0;
+
 }
 
 footer p {

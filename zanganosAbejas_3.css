@@ -97,12 +97,57 @@ header {
 .search button:hover {
     background-color: #e5a836; 
 }
+/* Caja de inicio de sesión */
+.login-box {
+    margin: 40px auto;
+    background-color: #f2c041;
+    padding: 1.5vh;
+    width: 40vh;
+    height: 35vh;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
 
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+.login-form label {
+    font-size: 0.9rem;
+    color: #333;
+    text-align: left;
+}
 
+.login-form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
 
+.login-button {
+    background-color: #219330;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
 
+.login-button:hover {
+    background-color: #1a7f26;
+}
 
 /* Estilo para el pie de página */
 footer {
@@ -114,6 +159,9 @@ footer {
     align-items: center;
     gap: 20px;
     margin-top: 3vh;
+    width: 90%; 
+    position: fixed;
+    bottom: 0;
 }
 
 footer p {

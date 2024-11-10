@@ -1,3 +1,4 @@
+
 /* Reset básico para todos los elementos */
 * {
     box-sizing: border-box;
@@ -103,6 +104,58 @@ header {
 
 
 
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre los artículos */
+    margin: 20px auto;
+    justify-content: space-around;
+}
+
+.blog-post {
+    flex-direction: column;
+    flex: 1 1 calc(30% - 20px); /* Cada post ocupa el 30% del ancho del contenedor */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.blog-post button {
+    padding: 10px 15px;
+    background-color: #219330;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.blog-post button:hover {
+    background-color: #1e7a2a;
+}
+
+
 
 /* Estilo para el pie de página */
 footer {
@@ -158,53 +211,3 @@ footer p {
 .linkedin { background-color: #0077b5; }
 .linkedin:hover { background-color: #006699; }
 
-.blog-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Espacio entre los artículos */
-    margin: 20px auto;
-    justify-content: space-around;
-}
-
-.blog-post {
-    flex-direction: column;
-    flex: 1 1 calc(30% - 20px); /* Cada post ocupa el 30% del ancho del contenedor */
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    max-width: 400px;
-}
-
-.blog-post img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.blog-post h2 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    color: #333;
-}
-
-.blog-post p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.blog-post button {
-    padding: 10px 15px;
-    background-color: #219330;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.blog-post button:hover {
-    background-color: #1e7a2a;
-}
